@@ -23,6 +23,7 @@ export class GroupService {
 
   /** GET groups from the server */
   getGroups (): Observable<Group[]> {
+    console.log("io");
     return this.http.get<Group[]>(this.groupsUrl)
       .pipe(
         tap(_ => this.log('fetched groups')),

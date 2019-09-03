@@ -31,13 +31,13 @@ module.exports = function(app, path) {
         }
 
         var user = {};
-        user.username = req.body.username;
+        user.username = req.body.name;
         user.email = req.body.email;
-        user.groupList = req.body.groupList;
-        user.adminGroupList = req.body.adminGroupList;
-        user.ofGroupAdminsRole = req.body.ofGroupAdminsRole;
+        user.groupList = [];
+        user.adminGroupList = [];
+        user.ofGroupAdminsRole = false;
 
-        fs.readFile("groups.json", 'utf8', function(err, data) {
+        fs.readFile("users.json", 'utf8', function(err, data) {
             data = JSON.parse(data);
             console.log();
             data.push(user);
@@ -105,7 +105,7 @@ module.exports = function(app, path) {
             return res.sendStatus(400);
         }
 
-        username = req.params.username;
+        username = req.params.name;
         console.log(username);
 
         fs.readFile("users.json", 'utf8', function(err, data) {

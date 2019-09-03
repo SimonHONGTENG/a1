@@ -1,6 +1,1 @@
-[{ "username": "super", "email": "superemail", "groupList": [], "adminGroupList": [], "ofGroupAdminsRole": true },
-    { "username": "user1", "email": "user1email", "groupList": [], "adminGroupList": [], "ofGroupAdminsRole": false },
-    { "username": "user2", "email": "user2email", "groupList": [], "adminGroupList": [], "ofGroupAdminsRole": false },
-    { "username": "user3", "email": "user3email", "groupList": [], "adminGroupList": [], "ofGroupAdminsRole": false },
-    { "username": "user4", "email": "user4email", "groupList": ["g1", "g2"], "adminGroupList": ["ag1"], "ofGroupAdminsRole": true }
-]
+[{"username":"super","email":"super@com.au","groupList":[],"adminGroupList":["g1","g2"],"ofGroupAdminsRole":true},{"username":"John","email":"john@com.au","groupList":["g1","g2"],"adminGroupList":[],"ofGroupAdminsRole":false},{"username":"teena","email":"teena@com.au","groupList":["g1","g2"],"adminGroupList":[],"ofGroupAdminsRole":false},{"username":"paul","email":"paul@com.au","groupList":["g1","g2"],"adminGroupList":[],"ofGroupAdminsRole":true},{"username":"w","email":"w@com.au","groupList":[],"adminGroupList":[],"ofGroupAdminsRole":false}]
