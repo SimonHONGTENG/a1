@@ -1,6 +1,6 @@
 
 ## REST API
 [Users]
-(../users.md)
+(users.md)
 [Groups]
-(../groups.md)
+(groups.md)
